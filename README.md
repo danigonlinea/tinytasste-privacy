@@ -1,6 +1,6 @@
 # Pequenos Mordiscos — Sitio web, Privacidad y Terminos
 
-Sitio publico para la app **Pequenos Mordiscos** (TinyTasste, `com.danigonlinea.tinytasste`).
+Sitio publico para la app **Pequenos Mordiscos** (TinyTasste).
 
 Repo: https://github.com/danigonlinea/tinytasste-privacy (rama `main`, GitHub Pages desde `/ (root)`).
 
