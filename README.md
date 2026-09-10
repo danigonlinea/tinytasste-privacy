@@ -1,6 +1,6 @@
-# Pequenos Mordiscos — Sitio web, Privacidad y Terminos
+# Pequeños Mordiscos — Sitio web, Privacidad y Términos
 
-Sitio publico para la app **Pequenos Mordiscos** (TinyTasste).
+Sitio público para la app **Pequeños Mordiscos** (TinyTasste).
 
 Repo: https://github.com/danigonlinea/tinytasste-privacy (rama `main`, GitHub Pages desde `/ (root)`).
 
@@ -18,8 +18,8 @@ Contacto: tinytasste@gmail.com
 
 ```
 index.html          # landing / home
-privacy/index.html  # politica de privacidad
-terms/index.html    # terminos del servicio
+privacy/index.html  # política de privacidad
+terms/index.html    # términos del servicio
 ```
 
 ## Desarrollo local
