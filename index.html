@@ -31,6 +31,10 @@
     .card p { margin:0; color:var(--muted); font-size:15px; }
     footer { text-align:center; color:var(--muted); font-size:14px; margin-top:40px; border-top:1px solid var(--line); padding-top:24px; }
     footer a { color:var(--brand-dark); }
+    .contact-fallback { font-size:14px; color:var(--muted); margin:0 0 8px; }
+    .contact-fallback a { color:var(--brand-dark); }
+    .copy-btn { border:1px solid var(--line); background:var(--card); border-radius:999px; padding:4px 12px; font-size:13px; cursor:pointer; color:var(--ink); }
+    .copy-btn:hover { border-color:var(--brand); }
   </style>
 </head>
 <body>
@@ -42,8 +46,9 @@
       <div class="cta">
         <a class="btn btn-primary" href="privacy/">Politica de privacidad</a>
         <a class="btn btn-ghost" href="terms/">Terminos del servicio</a>
-        <a class="btn btn-ghost" href="mailto:tinytasste@gmail.com">Contacto</a>
+        <a class="btn btn-ghost" href="mailto:tinytasste@gmail.com?subject=Consulta%20Pequenos%20Mordiscos">Contacto</a>
       </div>
+      <p class="contact-fallback">¿El botón no abre tu email? Escríbenos a <a href="mailto:tinytasste@gmail.com?subject=Consulta%20Pequenos%20Mordiscos">tinytasste@gmail.com</a> · <a href="https://mail.google.com/mail/?view=cm&to=tinytasste@gmail.com&su=Consulta%20Pequenos%20Mordiscos" target="_blank" rel="noopener">abrir en Gmail</a> · <button type="button" class="copy-btn" data-copy="tinytasste@gmail.com">copiar email</button></p>
     </header>
 
     <div class="grid">
@@ -80,8 +85,21 @@
 
     <footer>
       <p><strong>Pequenos Mordiscos</strong> (TinyTasste) · com.danigonlinea.tinytasste · v1.0.3</p>
-      <p><a href="privacy/">Politica de privacidad</a> · <a href="terms/">Terminos del servicio</a> · <a href="mailto:tinytasste@gmail.com">tinytasste@gmail.com</a></p>
+      <p><a href="privacy/">Politica de privacidad</a> · <a href="terms/">Terminos del servicio</a> · <a href="mailto:tinytasste@gmail.com?subject=Consulta%20Pequenos%20Mordiscos">tinytasste@gmail.com</a></p>
     </footer>
   </div>
+  <script>
+    document.querySelectorAll('[data-copy]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var email = btn.getAttribute('data-copy');
+        function done() { btn.textContent = 'copiado'; setTimeout(function () { btn.textContent = 'copiar email'; }, 2000); }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(email).then(done, function () { window.prompt('Copia el email:', email); });
+        } else {
+          window.prompt('Copia el email:', email);
+        }
+      });
+    });
+  </script>
 </body>
 </html>
