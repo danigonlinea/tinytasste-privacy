@@ -1,19 +1,26 @@
-# Pequeños Mordiscos — Sitio web y Política de Privacidad
+# Pequenos Mordiscos — Sitio web, Privacidad y Terminos
 
-Sitio público para la app **Pequeños Mordiscos** (`com.danigonlinea.tinytasste`).
+Sitio publico para la app **Pequenos Mordiscos** (TinyTasste, `com.danigonlinea.tinytasste`).
 
-Publicado con GitHub Pages:
+Repo: https://github.com/danigonlinea/tinytasste-privacy (rama `main`, GitHub Pages desde `/ (root)`).
 
-- 🏠 Home: https://danigonlinea.github.io/tinytasste-privacy/
-- 🔒 Privacidad (ES): https://danigonlinea.github.io/tinytasste-privacy/privacy.html
+## URLs para Google Cloud (OAuth consent screen) y Play Console
 
-## Usar estas URLs en Google Cloud / Play Console
-
-| Campo | Valor |
+| Campo | URL |
 |---|---|
-| Application home page (OAuth consent screen) | `https://danigonlinea.github.io/tinytasste-privacy/` |
-| Privacy Policy URL (OAuth + Play Store listing) | `https://danigonlinea.github.io/tinytasste-privacy/privacy.html` |
-| Contacto | danigonlinea@gmail.com |
+| Application home page | `https://danigonlinea.github.io/tinytasste-privacy/` |
+| Application privacy policy link | `https://danigonlinea.github.io/tinytasste-privacy/privacy/` |
+| Application Terms of Service link | `https://danigonlinea.github.io/tinytasste-privacy/terms/` |
+
+Contacto: danigonlinea@gmail.com
+
+## Estructura
+
+```
+index.html          # landing / home
+privacy/index.html  # politica de privacidad
+terms/index.html    # terminos del servicio
+```
 
 ## Desarrollo local
 
@@ -25,4 +32,4 @@ python3 -m http.server 8080
 
 ## Despliegue
 
-GitHub Pages → Deploy from branch → `main` / `/ (root)`.
+Push a `main` → GitHub Pages publica automaticamente (1-2 min).
