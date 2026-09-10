@@ -12,7 +12,7 @@ Repo: https://github.com/danigonlinea/tinytasste-privacy (rama `main`, GitHub Pa
 | Application privacy policy link | `https://danigonlinea.github.io/tinytasste-privacy/privacy/` |
 | Application Terms of Service link | `https://danigonlinea.github.io/tinytasste-privacy/terms/` |
 
-Contacto: danigonlinea@gmail.com
+Contacto: tinytasste@gmail.com
 
 ## Estructura
 
