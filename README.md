@@ -4,7 +4,7 @@ Sitio publico para la app **Pequenos Mordiscos** (TinyTasste).
 
 Repo: https://github.com/danigonlinea/tinytasste-privacy (rama `main`, GitHub Pages desde `/ (root)`).
 
-## URLs para Google Cloud (OAuth consent screen) y Play Console
+## URLs para la pantalla de consentimiento de Google y Play Console
 
 | Campo | URL |
 |---|---|
